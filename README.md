@@ -42,10 +42,8 @@ curl -s -v "http://short.yufei.com/short?url=http://www.10000.com/1/1/1"
 ```
 
 * 如果对你有帮助, 或有有问题请联系我吧 :)
-
+```
 1600364422
+```
 
-license
--------
 
-MIT License.
