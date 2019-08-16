@@ -15,12 +15,12 @@ http {
         server_name  shrot.yufei.com; 
         location / {
             lua_socket_keepalive_timeout 30s;
-            content_by_lua_file /data/html/file_lua/short/index.lua;
+            content_by_lua_file /data/.../short/index.lua;
         }
 
         location /short {
             lua_socket_keepalive_timeout 30s;
-            content_by_lua_file /data/html/file_lua/short/shorten.lua;
+            content_by_lua_file /data/.../short/shorten.lua;
         }
     }
 
@@ -45,7 +45,3 @@ curl -s -v "http://short.yufei.com/short?url=http://www.10000.com/1/1/1"
 
 1600364422
 
-license
--------
-
-MIT License.
