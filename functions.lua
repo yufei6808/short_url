@@ -163,6 +163,10 @@ function M.url_create(long_url, short_string)
 	red:set('V_last', short_string)
 	red:set('S_' .. short_string, long_url)
 	red:set_keepalive(10000, 100)
+	local domain = "http://" .. ngx.var.host .. "/"
+    if domain then
+         return domain .. short_string
+    end
 	return config['domain']..short_string
 end
 
