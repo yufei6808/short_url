@@ -145,7 +145,7 @@ function M.url_create(long_url, short_string)
 	end
 	if result ~= ngx.null then
 		return config['domain']..result
-	end
+	end`
 	--]]
 	local url_details, err = M.get_url_details(long_url)
 	if err then
